@@ -18,6 +18,6 @@ GitHub Actions публикует содержимое `dist/` на GitHub Pages
 
 ## Фотографии и контакты
 
-Фотографии взяты из [публичного канала Just Point Car](https://t.me/JPCDetailing): [BMW](https://t.me/JPCDetailing/577), [ВАЗ 2113](https://t.me/JPCDetailing/580), [Porsche](https://t.me/JPCDetailing/586). Тексты о работах основаны на этих публикациях. Сайт ведёт к [Telegram студии](https://t.me/Justpointcar).
+Фотографии и логотип взяты из [публичного канала Just Point Car](https://t.me/JPCDetailing): [BMW](https://t.me/JPCDetailing/577), [ВАЗ 2113](https://t.me/JPCDetailing/580), [Porsche](https://t.me/JPCDetailing/586). Тексты о работах основаны на этих публикациях. Сайт ведёт к [Telegram студии](https://t.me/Justpointcar).
 
 На сайте указан адрес «Москва, ул. Талалихина, 41», поскольку номер строения расходится в открытых источниках. Перед размещением как официального сайта стоит уточнить его у студии.
