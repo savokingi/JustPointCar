@@ -42,7 +42,6 @@
 
 .hero h1 span { color: #465056; }
 .hero-figure img { filter: saturate(.64); }
-.ticker span { color: #c8d0d3; }
 .case-image img { filter: saturate(.76); }
 .case-image:hover img { filter: saturate(1); }
 .review { background: #dce1e3; }
@@ -57,15 +56,100 @@
   margin-right: auto;
 }
 
+/* Tighter editorial rhythm keeps the work and the call to action in view. */
+.hero {
+  height: calc(100svh - 86px);
+  min-height: 680px;
+  max-height: 790px;
+}
+
+.hero-figure { min-height: 0; }
+.hero-figure img { position: absolute; inset: 0; }
+.hero h1 { margin-top: clamp(65px, 7vh, 110px); }
+.hero-copy-bottom { padding-top: 55px; }
+
+.work { padding-top: 76px; padding-bottom: 95px; }
+.work-intro { margin: 58px 0 72px; }
+.work-intro h2 { font-size: clamp(60px, 6.5vw, 112px); }
+.cases {
+  max-width: 1160px;
+  margin: 0 auto;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .8fr);
+  gap: clamp(50px, 7vw, 110px);
+}
+.case-main .case-image { aspect-ratio: 4 / 4.7; }
+.case-secondary { margin-top: 110px; }
+.case-secondary .case-image { aspect-ratio: 4 / 4.3; }
+.editorial-link { margin-top: 82px; }
+
+.services { padding-bottom: 105px; }
+.services-grid { gap: 6vw; margin-top: 66px; }
+.services-left h2 { margin-bottom: 36px; }
+.under-link { margin-bottom: 45px; }
+.services-preview { width: 78%; }
+.service-item { padding-top: 25px; padding-bottom: 27px; }
+
+.method { padding-top: 68px; padding-bottom: 78px; }
+.method-heading { margin: 65px 0 70px; }
+.method-steps > div { min-height: 210px; }
+.method-steps h3 { margin-top: 34px; }
+
+.review { padding-top: 68px; padding-bottom: 74px; }
+.review-layout { grid-template-columns: 11% 1fr; padding-top: 55px; }
+.review-quote { font-size: 145px; }
+.review h2 { font-size: clamp(31px, 3.6vw, 62px); }
+.review-meta { margin-top: 44px; }
+
+.contact { min-height: 610px; }
+.contact-telegram { margin-bottom: 48px; }
+
+@media (min-width: 851px) {
+  .hero-copy-bottom {
+    margin-top: clamp(58px, 7vh, 92px);
+    padding-top: 0;
+  }
+}
+
 @media (max-width: 850px) {
   .site-nav {
     background: #000;
     color: #f4f5f5;
     border-color: #2c3235;
   }
+  .hero { height: auto; min-height: 0; max-height: none; }
+  .hero-copy { min-height: 550px; }
+  .hero-figure { height: 560px; }
+  .work-intro { margin: 50px 0 62px; }
+  .cases { gap: 38px; }
+  .case-secondary { margin-top: 95px; }
+  .services-grid { margin-top: 55px; }
+  .method-steps > div { min-height: 0; }
+  .contact { min-height: 0; }
 }
 
 @media (max-width: 600px) {
   .logo { width: 119px; }
   .footer-logo { width: 119px; margin: 0; }
+  .hero-copy { min-height: 505px; }
+  .hero h1 { margin-top: 72px; }
+  .hero-copy-bottom { padding-top: 42px; }
+  .hero-figure { height: 440px; }
+  .status-band { height: 54px; grid-template-columns: 1fr auto; gap: 12px; padding: 0 20px; font-size: 9px; }
+  .status-band span:nth-child(2) { display: none; }
+  .work { padding-top: 62px; padding-bottom: 75px; }
+  .work-intro { margin: 48px 0 52px; }
+  .work-intro h2 { font-size: clamp(50px, 12vw, 68px); }
+  .case-main .case-image { aspect-ratio: 4 / 4.7; }
+  .case-secondary { margin: 64px 0 0 11vw; }
+  .case-secondary .case-image { aspect-ratio: 4 / 4.5; }
+  .editorial-link { margin-top: 65px; }
+  .services { padding-bottom: 78px; }
+  .method-heading { margin: 56px 0 58px; }
+  .review { padding-top: 58px; padding-bottom: 66px; }
+  .review-layout { padding-top: 44px; }
+  .review-quote { font-size: 100px; }
+  .review h2 { font-size: clamp(30px, 8vw, 44px); }
+  .review-meta { margin-top: 33px; }
+  .contact-light { min-height: 380px; }
+  .contact-dark { min-height: 510px; }
 }
